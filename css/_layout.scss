@@ -1,0 +1,117 @@
+/* 
+Layout 
+---------------------------------------*/
+
+.l-hero {
+  background-color: $titlegreen;
+  padding: 3em 0;
+}
+
+.l-section__search {
+  margin: 2em auto;
+  width: 400px;
+}
+
+.l-section__cms,
+.l-section__category,
+.l-section__login,
+.l-section__comment,
+.l-section__addcomment,
+.l-section__admin-new {
+  margin-bottom: 2em;
+}
+
+.l-section__content,
+.l-section__loginpasscheck,
+.l-section__admin,
+.l-section__addPost {
+  margin: 2em 0;
+}
+
+.l-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.l-grid__item {
+  width: 30%;
+  margin-bottom: 2em;
+  margin-left: 5%;
+}
+
+.l-grid__item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.l-item {
+  position: relative;
+  border: 1px solid $cThinBlack;
+  height: 300px;
+  // top: 130%;
+}
+
+.l-item__thumbnail {
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  right: 1em;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.l-item__text {
+  position: absolute;
+  top: 228px;
+  left: 1em;
+  right: 1em;
+}
+
+.l-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.l-category__item {
+  margin: 0 0.5em;
+  cursor: pointer;
+  border: 1px solid $cThinBlack;
+  border-radius: 10%;
+  padding: 0.2em;
+}
+
+.l-link {
+  text-decoration: underline;
+}
+
+.l-right {
+  text-align: right;
+}
+
+/* Centering */
+
+.l-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  clear: both;
+}
+
+.l-wrapper__post,
+.l-wrapper__admin,
+.l-wrapper__addPost {
+  width: 60%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  clear: both;
+}

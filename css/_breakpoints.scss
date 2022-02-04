@@ -1,0 +1,9 @@
+@mixin mq($breakpoint) {
+    @media screen and (min-width: $breakpoint)  {
+      @content;
+    }
+  }
+  
+  //  ブレークポイントの設定
+  $tab: 768px;
+  $pc: 1024px;

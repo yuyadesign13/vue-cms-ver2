@@ -1,0 +1,138 @@
+/* 
+Object 
+---------------------------------------*/
+
+// heading
+
+h1{
+  display: block;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+a{
+  text-decoration: none;
+  color: $cBlack;
+
+  &:hover{
+    color: $cThinBlack;
+  }
+}
+
+.p-small{
+  font-size: .8em;
+}
+
+  /* button */
+  .c-button {
+    position: relative;
+    display: block;
+    margin: 3em auto;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none; /* Chrome, Safari, Opera, Android */
+       -moz-appearance: none; /* Firefox */
+            appearance: none; /* IE非対応 */
+  }
+  
+  .c-button__primary {
+    padding: 1.25em;
+    background-color: $cWhite;
+    color: $cBlack;
+    border:1px solid $cBlack;
+    font-size: .875em;
+    width: 280px;
+    font-weight: bold;
+    // transition-duration: 1s;
+    // transition-timing-function: ease-in-out;
+
+    &:hover{
+      background-color: $cBlack;
+      color: $cWhite;
+    }
+  }
+
+  // postDetails
+
+  .c-content{
+    display: block;
+    margin: 2em 0;
+    overflow-wrap: break-word;
+    text-align: left;
+  }
+
+  .c-category,
+  .c-comment li{
+    display: inline-block;
+    margin-left: 2em;
+  }
+
+  .c-addComment{
+    font-size: .8em;
+    margin: 2em 0 1em;
+  }
+
+  .c-input{
+    width: 100%;
+    height: 3em;
+  }
+
+  .c-textarea{
+    width: 100%;
+    height: 5em;
+  }
+  .c-password{
+    width: 280px;
+    height: 3em;
+  }
+
+  .c-space{
+    display: block;
+    height: 2em;
+  }
+
+  // adminHome
+
+  .c-float{
+    position: relative;
+    height: 80px;
+    border-bottom: 1px solid $cThinBrown;
+  }
+
+  .c-admin__text{
+    font-size: 1.25em;
+    display: inline-block;
+    padding-top: 24px;
+  }
+
+  .c-float__left{
+    position: absolute;
+    right: 5%;
+    top:16px;
+  }
+
+  .c-delete{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    font-size: 1em;
+
+    &:hover{
+      color: $cThinBlack;
+    }
+  }

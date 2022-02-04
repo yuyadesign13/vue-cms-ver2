@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/*
+Base
+-----------------------------------------------------*/
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* Default Style */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font: medium/1.5 'Roboto', sans-serif;
+}
+
+html *,
+html *:before,
+html *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  color: #333;
+  letter-spacing: .02em;
+  line-height: 1.5;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* 
+Layout 
+---------------------------------------*/
+.l-hero {
+  background-color: #66cdaa;
+  padding: 3em 0;
+}
+
+.l-section__search {
+  margin: 2em auto;
+  width: 400px;
+}
+
+.l-section__cms,
+.l-section__category,
+.l-section__login,
+.l-section__comment,
+.l-section__addcomment,
+.l-section__admin-new {
+  margin-bottom: 2em;
+}
+
+.l-section__content,
+.l-section__loginpasscheck,
+.l-section__admin,
+.l-section__addPost {
+  margin: 2em 0;
+}
+
+.l-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.l-grid__item {
+  width: 30%;
+  margin-bottom: 2em;
+  margin-left: 5%;
+}
+
+.l-grid__item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.l-item {
+  position: relative;
+  border: 1px solid #999;
+  height: 300px;
+}
+
+.l-item__thumbnail {
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  right: 1em;
+}
+
+.l-item__thumbnail:hover {
+  opacity: 0.7;
+}
+
+.l-item__text {
+  position: absolute;
+  top: 228px;
+  left: 1em;
+  right: 1em;
+}
+
+.l-category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.l-category__item {
+  margin: 0 0.5em;
+  cursor: pointer;
+  border: 1px solid #999;
+  border-radius: 10%;
+  padding: 0.2em;
+}
+
+.l-link {
+  text-decoration: underline;
+}
+
+.l-right {
+  text-align: right;
+}
+
+/* Centering */
+.l-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  clear: both;
+}
+
+.l-wrapper__post,
+.l-wrapper__admin,
+.l-wrapper__addPost {
+  width: 60%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  clear: both;
+}
+
+/* 
+Object 
+---------------------------------------*/
+h1 {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #999;
+}
+
+.p-small {
+  font-size: .8em;
+}
+
+/* button */
+.c-button {
+  position: relative;
+  display: block;
+  margin: 3em auto;
+  outline: 0;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  /* Chrome, Safari, Opera, Android */
+  /* Firefox */
+  appearance: none;
+  /* IE非対応 */
+}
+
+.c-button__primary {
+  padding: 1.25em;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  font-size: .875em;
+  width: 280px;
+  font-weight: bold;
+}
+
+.c-button__primary:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.c-content {
+  display: block;
+  margin: 2em 0;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+.c-category,
+.c-comment li {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.c-addComment {
+  font-size: .8em;
+  margin: 2em 0 1em;
+}
+
+.c-input {
+  width: 100%;
+  height: 3em;
+}
+
+.c-textarea {
+  width: 100%;
+  height: 5em;
+}
+
+.c-password {
+  width: 280px;
+  height: 3em;
+}
+
+.c-space {
+  display: block;
+  height: 2em;
+}
+
+.c-float {
+  position: relative;
+  height: 80px;
+  border-bottom: 1px solid #bd9f77;
+}
+
+.c-admin__text {
+  font-size: 1.25em;
+  display: inline-block;
+  padding-top: 24px;
+}
+
+.c-float__left {
+  position: absolute;
+  right: 5%;
+  top: 16px;
+}
+
+.c-delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  font-size: 1em;
+}
+
+.c-delete:hover {
+  color: #999;
+}
+/*# sourceMappingURL=style.css.map */
